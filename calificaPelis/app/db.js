@@ -1,5 +1,5 @@
 // Conexión a la base de datos
-exports.connectionString = "postgres://calificador:calificador@localhost/calificaciones";
+exports.connectionString = "postgres://calificador:calificador@tallercloud-bbdd.cloudapp.net:5432/calificaciones";
 
 // Manejador de errores
 exports.error = function(err, res, mensaje) {

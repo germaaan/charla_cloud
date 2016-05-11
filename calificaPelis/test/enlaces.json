@@ -1,0 +1,10 @@
+[{
+  "nombre": "Inicio",
+  "ruta": "/"
+}, {
+  "nombre": "Sección 'Consultar'",
+  "ruta": "/peliculas/consultar"
+}, {
+  "nombre": "API 'Nombre de películas'",
+  "ruta": "/peliculas/nombres"
+}]

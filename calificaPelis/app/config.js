@@ -8,7 +8,7 @@ var express = require("express");
 
 module.exports = function(app) {
 	// Dirección IP y puerto de escucha de peticiones
-	app.set("port", process.env.PORT || 3434);
+	app.set('port', process.env.PORT || 5000 || 3000);
 	app.set("ip", process.env.IP || "0.0.0.0");
 
 	// Directorio con las plantillas
