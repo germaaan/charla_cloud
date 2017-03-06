@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Cloud Computing: desarrollando en la ☁️</title>
+    <title>Introducción al '☁️ computing'</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
@@ -23,12 +23,12 @@
     </script>
 
     <style media="screen" type="text/css">
-      .reveal section img {
-        vertical-align: middle;
-        background:none;
-        border:none;
-        box-shadow:none;
-      }
+        .reveal section img {
+            vertical-align: middle;
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
     </style>
 </head>
 
@@ -36,158 +36,222 @@
     <div class="reveal">
         <div class="slides">
             <section>
-							<h3>Cloud Computing: <br> desarrollando en la <img alt="image" src="images/kinto.png" height="50" /></h3>
-							<p style="line-height: 43%">
-								<font size="4">
-									<i style="font-size: 25px;">Germán Martínez Maldonado</i>
-									<br/>
-									(<strong>GitHub</strong>: <a href="https://github.com/germaaan"> @germaaan</a> /
-									<strong>Twitter</strong>: <a href="https://twitter.com/germaaan_">@germaaan_</a>)
-									<br/><br/><i style="font-size: 25px;">Oficina de Software Libre de la Universidad de Granada</i>
-									<br/>(<strong>Twitter</strong>: <a href="https://twitter.com/OSLUGR">@OSLUGR</a> /
-									<strong>Facebook</strong>: <a href="https://www.facebook.com/SoftwareLibreUGR">@SoftwareLibreUGR</a>)
-									<br/><br/><i style="font-size: 25px;">Granada Geek</i>
-									<br/>(<a href="http://www.meetup.com/es-ES/Granada-Geek/">http://www.meetup.com/es-ES/Granada-Geek/</a>)
-								</font>
-								<br/>
-								<img alt="image" src="images/osl.png" height="270" />
-								<br/>
-								<img alt="image" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
-							</p>
+                <h3>Introducción al '<img alt="image" src="images/kinto.png" height="50" /> Computing'</h3>
+                <p style="line-height: 43%">
+                    <font size="4">
+                        <i style="font-size: 25px;">Germán Martínez Maldonado</i>
+                        <br/> (
+                        <strong>GitHub</strong>: <a href="https://github.com/germaaan"> @germaaan</a> /
+                        <strong>Twitter</strong>: <a href="https://twitter.com/germaaan_">@germaaan_</a>)
+                        <br/><br/><i style="font-size: 25px;">Oficina de Software Libre de la Universidad de Granada</i>
+                        <br/>(<strong>Twitter</strong>: <a href="https://twitter.com/OSLUGR">@OSLUGR</a> /
+                        <strong>Facebook</strong>: <a href="https://www.facebook.com/SoftwareLibreUGR">@SoftwareLibreUGR</a>)
+                        <br/><br/><i style="font-size: 25px;">Granada Geek</i>
+                        <br/>(<a href="http://www.meetup.com/es-ES/Granada-Geek/">http://www.meetup.com/es-ES/Granada-Geek/</a>)
+                    </font>
+                    <br/>
+                    <img alt="image" src="images/osl.png" height="270" />
+                    <br/>
+                    <img alt="image" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                </p>
             </section>
             <section>
-              <section>
-                <h3>¿Qué es la computación en la nube?</h3>
-                <img class="fragment" alt="image" src="images/not.png"/>
-              </section>
-              <section>
-                <h4>La nube es independencia entre dispositivo y ubicación</h4>
-                <img class="fragment" alt="image" src="images/cloud_computing.png" height="600"/>
-              </section>
-              <section>
-                <h3>Procesador grande, ande o no ande</h3>
-                <img class="fragment" alt="image" src="images/escalado.png"/>
-              </section>
-            </section>
-            <section>
-              <section>
-                <h3>Modelos de servicio</h3>
-                <img class="fragment" alt="image" src="images/not_simply_deploy.png"/>
-              </section>
-              <section>
-                <h3>Modelos de servicio: SaaS</h3>
-                <p>
-                  <strong>Software as a Service:</strong> las aplicaciones están en la web y son provistas por un distribuidor que es el que se encarga de administrarlas.
-                  <ul>
-                    <li class="fragment">No hay costes adicionales de hardware</li>
-                    <li class="fragment">No hay costes iniciales, pagar por lo que usa</li>
-                    <li class="fragment">El uso es escalable</li>
-                    <li class="fragment">Las actualizaciones se realizan automáticamente</li>
-                    <li class="fragment">Compatibilidad cruzada de dispositivos</li>
-                    <li class="fragment">Accesible desde cualquier ubicación</li>
-                  </ul>
-                  <br>
-                  <strong class="fragment">Ejemplo:<br> Google Apps, Dropbox</strong>
-                </p>
-              </section>
-              <section>
-                <h3>Modelos de servicio: PaaS</h3>
-                <p>
-                  <strong>Platform as a Service: un distribuidor provee una plataforma abstraída y el entorno para que el desarrollador cree aplicaciones que serán accesibles desde la web.</strong>
-                  <ul>
-                    <li class="fragment">Sin inversión en infraestructura física</li>
-                    <li class="fragment">Fácil despliegue</li>
-                    <li class="fragment">Flexibilidad y adaptabilidad</li>
-                    <li class="fragment">Trabajo en equipo distribuido</li>
-                    <li class="fragment">Seguridad</li>
-                  </ul>
-                  <br>
-                  <strong class="fragment">Ejemplo:<br> Heroku, OpenShift, Google App Engine, Bluemix</strong>
-                </p>
-              </section>
-              <section>
-                <h3>Modelos de servicio: IaaS</h3>
-                <p>
-                  <strong>Infrastructure as a Service: un distribuidor provee una infraestructura virtualizada con las caracteristicas solicitadas.</strong>
-                  <ul>
-                    <li class="fragment">Escalabilidad</li>
-                    <li class="fragment">Sin inversión en hardware físico "limitado"</li>
-                    <li class="fragment">Pago por uso</li>
-                    <li class="fragment">Independencia de ubicación</li>
-                    <li class="fragment">Seguridad física de centros de datos</li>
-                    <li class="fragment">Sin punto de fallo único</li>
-                  </ul>
-                  <br>
-                  <strong class="fragment">Ejemplos: Microsoft Azure, Amazon EC2, Google Cloud Platform </strong>
-                </p>
-              </section>
-              <section>
-                <h3>Comparativa</h3>
-                <img class="fragment" alt="image" src="images/comparativa.png" height="600"/>
-              </section>
-            </section>
-            <section>
-              <section>
-                <h3>El bucle de la vida</h3>
-                <img class="fragment" alt="image" src="images/ciclo.png"/>
-              </section>
-              <section>
-                <h3>Te hablo de: </h3>
-                <ul>
-                  <li class="fragment">Automatizar las tareas de desarrollo:
-                    <ul>
-                      <li>Instalación entornos virtuales desarrollo</li>
-                      <li>Construcción de aplicaciones</li>
-                      <li>Realización de tests</li>
-                      <li>Integración continua</li>
+                <section>
+                    <h3>¿Qué es la computación en la nube?</h3>
+                    <img class="fragment" alt="image" src="images/not.png" />
+                </section>
+                <section>
+                    <h3>La nube es...</h3>
+                    <p class="fragment">Cuando hablamos de nube nos referimos a servicios que están presentes aquí pero que existen en remoto.</p>
+                    <ul class="fragment">
+                        <li>Correo electrónico</li>
+                        <li class="fragment">Comunicación / Videoconferencia</li>
+                        <li class="fragment">Edición de documentos</li>
+                        <li class="fragment">Reproducción de video y audio</li>
                     </ul>
-                    </li>
-                  <li class="fragment">Virtualización de recursos</li>
-                  <li class="fragment">Provisionamiento de servidores</li>
-                  <li class="fragment">Gestión de configuraciones</li>
-                  <li class="fragment">Despliegue continuo</li>
-                </ul>
-              </section>
-              <section>
-                <h3>Te hablo de: </h3>
-                <img class="fragment" alt="image" src="images/devops.png"/>
-              </section>
+                </section>
+                <section>
+                    <h4>La nube es independencia entre dispositivo y ubicación.</h4>
+                    <img alt="image" src="images/cloud_computing.png" height="450" />
+                    <font size=5>
+                        <p>Poder manipular, configurar y acceder a aplicaciones sin tener que instalar nada en nuestro sistema local.</p>
+                        <p>Poder hacer nuestras aplicaciones móviles y colaborativas.</p>
+                    </font>
+                </section>
+                <section>
+                    <h3>¿Por qué es necesario el cloud computing?</h3>
+                    <img alt="image" src="images/escalado.png" />
+                    <font size=5>
+                        <p>Porque no siempre puedes tirar del "ordenador grande, ande o no ande".</p>
+                        <p>Porque a veces no es viable y, además, necesitas respuesta inmediata.</p>
+                    </font>
+                </section>
+                <section>
+                  <h3>Características principales</h3>
+                  <ul class="fragment">
+                    <li>Servicio bajo demanda</li>
+                    <li class="fragment">Amplio acceso por red</li>
+                    <li class="fragment">Fondo común de recursos</li>
+                    <li class="fragment">Rápida elasticidad</li>
+                    <li class="fragment">Servicio medido</li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Otras características</h3>
+                  <ul class="fragment">
+                    <li>Escala masiva</li>
+                    <li class="fragment">Homogeneidad</li>
+                    <li class="fragment">Virtualización</li>
+                    <li class="fragment">Software de bajo coste</li>
+                    <li class="fragment">Tolerancia a fallos</li>
+                    <li class="fragment">Distribución geográfica</li>
+                    <li class="fragment">Orientado a servicios</li>
+                    <li class="fragment">Seguridad avanzada</li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Riesgos</h3>
+                  <ul class="fragment">
+                    <li>Gestión de datos e infraestructuras mediante terceros ("La nube es el ordenador de otro").</li>
+                    <li class="fragment">Dificultad para cambiar de proveedor</li>
+                    <li class="fragment">Fallo de aislamiento</li>
+                    <li class="fragment">Interfaz de gestión comprometida</li>
+                    <li class="fragment">Borrado de datos de forma insegura o incompleta</li>
+                  </ul>
+                </section>
+                <section>
+                    <h3>Modelos de trabajo en cloud computing:</h3>
+                    <ul>
+                        <li>Según el modelo de despliegue</li>
+                        <li>Según el modelo de servicio</li>
+                    </ul>
+                </section>
             </section>
             <section>
-              <section>
-              <h3>Pero antes de empezar a desarrollar...</h3>
-              <h3>Hay un sitio dónde el software nace, crece, se reproduce y muere.</h3>
-              <img class="fragment"alt="image" src="images/github.png" height="450"/>
-            </section>
-            </section>
-            <section>
-            <section>
-              <h3>Empezamos:</h3>
-              <p>Antes de desplegar algo, tenemos que tener algo que desplegar. <i class="fragment">(Obvious is obvious...)</i></p>
-              <p class="fragment">Node.js mola mucho, así que vamos asumir que es lo que estamos usando.</p>
+                <section>
+                    <h3>Modelos de despliegue</h3>
+                    <img class="fragment" alt="image" src="images/modelos_despliegue.png" height="450" />
+                </section>
             </section>
             <section>
-              <h3>1: Instalación entornos virtuales desarrollo</h3>
-              <p> Como por ejemplo: <a href="https://github.com/tj/n">n</a>.</p>
-              <pre>
+                <section>
+                    <h3>Modelos de servicio</h3>
+                    <img class="fragment" alt="image" src="images/not_simply_deploy.png" />
+                </section>
+                <section>
+                    <h3>Modelos de servicio: SaaS</h3>
+                    <p>
+                        <strong>Software as a Service:</strong> las aplicaciones están en la web y son provistas por un distribuidor que es el que se encarga de administrarlas.
+                        <ul>
+                            <li class="fragment">No hay costes adicionales de hardware</li>
+                            <li class="fragment">No hay costes iniciales, pagar por lo que usa</li>
+                            <li class="fragment">El uso es escalable</li>
+                            <li class="fragment">Las actualizaciones se realizan automáticamente</li>
+                            <li class="fragment">Compatibilidad cruzada de dispositivos</li>
+                            <li class="fragment">Accesible desde cualquier ubicación</li>
+                        </ul>
+                        <br>
+                        <strong class="fragment">Ejemplo:<br> Google Apps, Dropbox</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Modelos de servicio: PaaS</h3>
+                    <p>
+                        <strong>Platform as a Service: un distribuidor provee una plataforma abstraída y el entorno para que el desarrollador cree aplicaciones que serán accesibles desde la web.</strong>
+                        <ul>
+                            <li class="fragment">Sin inversión en infraestructura física</li>
+                            <li class="fragment">Fácil despliegue</li>
+                            <li class="fragment">Flexibilidad y adaptabilidad</li>
+                            <li class="fragment">Trabajo en equipo distribuido</li>
+                            <li class="fragment">Seguridad</li>
+                        </ul>
+                        <br>
+                        <strong class="fragment">Ejemplo:<br> Heroku, OpenShift, Google App Engine, Bluemix</strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Modelos de servicio: IaaS</h3>
+                    <p>
+                        <strong>Infrastructure as a Service: un distribuidor provee una infraestructura virtualizada con las caracteristicas solicitadas.</strong>
+                        <ul>
+                            <li class="fragment">Escalabilidad</li>
+                            <li class="fragment">Sin inversión en hardware físico "limitado"</li>
+                            <li class="fragment">Pago por uso</li>
+                            <li class="fragment">Independencia de ubicación</li>
+                            <li class="fragment">Seguridad física de centros de datos</li>
+                            <li class="fragment">Sin punto de fallo único</li>
+                        </ul>
+                        <br>
+                        <strong class="fragment">Ejemplos: Microsoft Azure, Amazon EC2, Google Cloud Platform </strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>Comparativa</h3>
+                    <img class="fragment" alt="image" src="images/comparativa.png" height="600" />
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>El bucle de la vida</h3>
+                    <img class="fragment" alt="image" src="images/ciclo.png" />
+                </section>
+                <section>
+                    <h3>Te hablo de: </h3>
+                    <ul>
+                        <li class="fragment">Automatizar las tareas de desarrollo:
+                            <ul>
+                                <li>Instalación entornos virtuales desarrollo</li>
+                                <li>Construcción de aplicaciones</li>
+                                <li>Realización de tests</li>
+                                <li>Integración continua</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Virtualización de recursos</li>
+                        <li class="fragment">Provisionamiento de servidores</li>
+                        <li class="fragment">Gestión de configuraciones</li>
+                        <li class="fragment">Despliegue continuo</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Te hablo de: </h3>
+                    <img class="fragment" alt="image" src="images/devops.png" />
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Pero antes de empezar a desarrollar...</h3>
+                    <h3>Hay un sitio dónde el software nace, crece, se reproduce y muere.</h3>
+                    <img class="fragment" alt="image" src="images/github.png" height="450" />
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Empezamos:</h3>
+                    <p>Antes de desplegar algo, tenemos que tener algo que desplegar. <i class="fragment">(Obvious is obvious...)</i></p>
+                    <p class="fragment">Node.js mola mucho, así que vamos asumir que es lo que estamos usando.</p>
+                </section>
+                <section>
+                    <h3>1: Instalación entornos virtuales desarrollo</h3>
+                    <p> Como por ejemplo: <a href="https://github.com/tj/n">n</a>.</p>
+                    <pre>
               <code data-trim contenteditable>
                 $ npm install -g n
               </code>
             </pre>
-            </section>
-            <section>
-              <h3>2: Construcción de aplicaciones</h3>
-              <p>Como por ejemplo: <a href="https://github.com/gulpjs/gulp">gulp</a>.</p>
-              <pre>
+                </section>
+                <section>
+                    <h3>2: Construcción de aplicaciones</h3>
+                    <p>Como por ejemplo: <a href="https://github.com/gulpjs/gulp">gulp</a>.</p>
+                    <pre>
               <code data-trim contenteditable>
                 $ npm install gulp
               </code>
             </pre>
-            </section>
-            <section>
-              <h3>2: Construcción de aplicaciones</h3>
-              <p>gulpfile.js:</p>
-              <pre>
+                </section>
+                <section>
+                    <h3>2: Construcción de aplicaciones</h3>
+                    <p>gulpfile.js:</p>
+                    <pre>
               <code data-trim contenteditable>
 gulp.task('default', ["start"], function() {});
 
@@ -202,37 +266,37 @@ gulp.task('start', ['test'], function() {
 });
               </code>
             </pre>
-            </section>
-            <section>
-              <h3>2: Construcción de aplicaciones</h3>
-              <pre>
+                </section>
+                <section>
+                    <h3>2: Construcción de aplicaciones</h3>
+                    <pre>
               <code data-trim contenteditable>
                 $ gulp
               </code>
             </pre>
-            <img alt="image" src="images/gulp.png"/>
-            </section>
-            <section>
-              <h3>3: Realización de test</h3>
-              <p> Test unitarios: </p>
-              <ul>
-                <li><a href="https://github.com/chaijs/chai">Chai</a></li>
-                <li><a href="https://github.com/mochajs/mocha">Mocha</a></li>
-              </ul>
-              <p> Test de cobertura: </p>
-              <ul>
-                <li><a href="https://github.com/gotwarlost/istanbul">Istanbul</a></li>
-              </ul>
-              <pre>
+                    <img alt="image" src="images/gulp.png" />
+                </section>
+                <section>
+                    <h3>3: Realización de test</h3>
+                    <p> Test unitarios: </p>
+                    <ul>
+                        <li><a href="https://github.com/chaijs/chai">Chai</a></li>
+                        <li><a href="https://github.com/mochajs/mocha">Mocha</a></li>
+                    </ul>
+                    <p> Test de cobertura: </p>
+                    <ul>
+                        <li><a href="https://github.com/gotwarlost/istanbul">Istanbul</a></li>
+                    </ul>
+                    <pre>
               <code data-trim contenteditable>
                 $ npm install chai mocha istanbul
               </code>
             </pre>
-            </section>
-            <section>
-              <h3>3: Realización de test</h3>
-              <p>test.js:</p>
-              <pre>
+                </section>
+                <section>
+                    <h3>3: Realización de test</h3>
+                    <p>test.js:</p>
+                    <pre>
               <code data-trim contenteditable>
 describe('Pruebas de acceso', function() {
 
@@ -252,21 +316,21 @@ describe('Pruebas de acceso', function() {
 });
               </code>
             </pre>
-            </section>
-            <section>
-              <h3>3: Realización de test</h3>
-              <pre>
+                </section>
+                <section>
+                    <h3>3: Realización de test</h3>
+                    <pre>
               <code data-trim contenteditable>
                 $ gulp test
               </code>
             </pre>
-            <img alt="image" src="images/test_1.png"/>
-            <img alt="image" src="images/test_2.png"/>
-            </section>
-            <section>
-              <h3>4: Integración continua</h3>
-              <p>Como por ejemplo: <a href="https://travis-ci.org/">Travis CI</a>.</p>
-              <pre>
+                    <img alt="image" src="images/test_1.png" />
+                    <img alt="image" src="images/test_2.png" />
+                </section>
+                <section>
+                    <h3>4: Integración continua</h3>
+                    <p>Como por ejemplo: <a href="https://travis-ci.org/">Travis CI</a>.</p>
+                    <pre>
               <code data-trim contenteditable>
 # .travis.yml
 
@@ -282,39 +346,41 @@ after_success:
   - "HAZ ESTO SI PASAS LOS TESTS"
               </code>
             </pre>
+                </section>
+                <section>
+                    <h3>4: Integración continua</h3>
+                    <img alt="image" src="images/travis.png" />
+                </section>
             </section>
             <section>
-              <h3>4: Integración continua</h3>
-            <img alt="image" src="images/travis.png"/>
+                <section>
+                    <h3>¿Y ahora?</h3>
+                    <p class="fragment"><i>Desplegar<i class="fragment"> / </i><i class="fragment">Virtualizar</i></i>
+                    </p>
+                </section>
             </section>
-          </section>
-          <section>
             <section>
-              <h3>¿Y ahora?</h3>
-              <p class="fragment"><i>Desplegar<i class="fragment"> / </i><i class="fragment">Virtualizar</i></i></p>
-            </section>
-          </section>
-          <section>
-              <section>
-                <h3>Desplegar en un PaaS</h3>
-                <p> Por ejemplo: <a href="https://www.heroku.com/">Heroku</a></p>
-                <p class="fragment"> Permiten añadir como complemento una base de datos PostgreSQL sobre la que podríamos trabajar directamente con nuestra aplicación.</p>
-                <p class="fragment"> Las máquinas virtuales disponibles en Heroku son conocidas como dynos y se configuran mediante un Procfile.</p>
-              </section>
-              <section>
-                <h3>Desplegar en un PaaS</h3>
-                <p> Configurando el Procfile</p>
-                <p class="fragment"> Los dynos de Heroku se configuran mediante un archivo llamado Procfile y principalmente podemos diferenciar dos tipos de dynos: web para los procesos que van a recibir tráfico HTTP y worker para los procesos que se van a ejecutar en segundo plano.</p>
-                <pre class="fragment">
+                <section>
+                    <h3>Desplegar en un PaaS</h3>
+                    <p> Por ejemplo: <a href="https://www.heroku.com/">Heroku</a></p>
+                    <p class="fragment"> Permiten añadir como complemento una base de datos PostgreSQL sobre la que podríamos trabajar directamente con nuestra aplicación.</p>
+                    <p class="fragment"> Las máquinas virtuales disponibles en Heroku son conocidas como dynos y se configuran mediante un Procfile.</p>
+                </section>
+                <section>
+                    <h3>Desplegar en un PaaS</h3>
+                    <p> Configurando el Procfile</p>
+                    <p class="fragment"> Los dynos de Heroku se configuran mediante un archivo llamado Procfile y principalmente podemos diferenciar dos tipos de dynos: web para los procesos que van a recibir tráfico HTTP y worker para los procesos que se van a ejecutar en
+                        segundo plano.</p>
+                    <pre class="fragment">
                 <code data-trim contenteditable>
 web: node app
                 </code>
               </pre>
-              </section>
-              <section>
-                <h3>Desplegar en un PaaS</h3>
-                <p>Crear la aplicación en Heroku</p>
-                <pre class="fragment">
+                </section>
+                <section>
+                    <h3>Desplegar en un PaaS</h3>
+                    <p>Crear la aplicación en Heroku</p>
+                    <pre class="fragment">
                 <code data-trim contenteditable>
 # $ heroku login
 
@@ -322,38 +388,38 @@ $ heroku apps:create --region eu NOMBRE_APP
 $ git push heroku master
                 </code>
               </pre>
-              <img alt="image" class="fragment" src="images/heroku_01.png" height="300"/>
-              </section>
-              <section>
-                <h3>Desplegar en un PaaS</h3>
-                <p>Escalar la aplicación</p>
-                <img alt="image" class="fragment" src="images/heroku_02.png"/>
-              </section>
-              <section>
-                <h3>Desplegar en un PaaS</h3>
-                <p>Desplegar automáticamente</p>
-                <img alt="image" class="fragment" src="images/heroku_03.png"/>
-              </section>
-          </section>
-          <section>
-            <section>
-              <h3>Virtualizar</h3>
-              <p>Podemos crear contenedores/máquinas virtuales que se puedan desplegar en un IaaS (o en cualquier sitio).</p>
+                    <img alt="image" class="fragment" src="images/heroku_01.png" height="300" />
+                </section>
+                <section>
+                    <h3>Desplegar en un PaaS</h3>
+                    <p>Escalar la aplicación</p>
+                    <img alt="image" class="fragment" src="images/heroku_02.png" />
+                </section>
+                <section>
+                    <h3>Desplegar en un PaaS</h3>
+                    <p>Desplegar automáticamente</p>
+                    <img alt="image" class="fragment" src="images/heroku_03.png" />
+                </section>
             </section>
             <section>
-              <h3>Docker</h3>
-              <p>Contenedores que autocontienen un sistema de archivos completo con todo lo necesario para funcionar:</p>
-              <ul class="fragment" >
-                <li> Código </li>
-                <li> Ejecutables </li>
-                <li> Herramientas del sistema </li>
-                <li> Bibliotecas del sistema </li>
-              </ul>
-            </section>
-            <section>
-              <h3>Docker</h3>
-              <p> Se crean mediante un Dockerfile que se puede subir a <a href="https://hub.docker.com/">DockerHub</a></p>
-              <pre class="fragment">
+                <section>
+                    <h3>Virtualizar</h3>
+                    <p>Podemos crear contenedores/máquinas virtuales que se puedan desplegar en un IaaS (o en cualquier sitio).</p>
+                </section>
+                <section>
+                    <h3>Docker</h3>
+                    <p>Contenedores que autocontienen un sistema de archivos completo con todo lo necesario para funcionar:</p>
+                    <ul class="fragment">
+                        <li> Código </li>
+                        <li> Ejecutables </li>
+                        <li> Herramientas del sistema </li>
+                        <li> Bibliotecas del sistema </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Docker</h3>
+                    <p> Se crean mediante un Dockerfile que se puede subir a <a href="https://hub.docker.com/">DockerHub</a></p>
+                    <pre class="fragment">
                 <code data-trim contenteditable>
 FROM    ubuntu:15.10
 MAINTAINER German Martinez <germaaan@gmail.com> Version: 1.0
@@ -375,40 +441,41 @@ RUN ifconfig eth0
 CMD ["gulp", "server"]
               </code>
             </pre>
-            </section>
-            <section>
-              <h3>Docker</h3>
-              <img alt="image" src="images/docker.png" height="600"/>
-            </section>
-            <section>
-              <h3>Vagrant</h3>
-              <p>Es una herramienta para la creación y configuración de entornos de desarrollo virtualizados.</p>
-              <p>Lo primero es descargarse una caja <i class="fragment">(la caja!).</i></p>
-              <pre class="fragment">
+                </section>
+                <section>
+                    <h3>Docker</h3>
+                    <img alt="image" src="images/docker.png" height="600" />
+                </section>
+                <section>
+                    <h3>Vagrant</h3>
+                    <p>Es una herramienta para la creación y configuración de entornos de desarrollo virtualizados.</p>
+                    <p>Lo primero es descargarse una caja <i class="fragment">(la caja!).</i></p>
+                    <pre class="fragment">
                 <code data-trim contenteditable>
                   vagrant box add precise64 http://files.vagrantup.com/precise64.box
               </code>
             </pre>
-            </section>
-            <section>
-              <h3>Vagrant</h3>
-              <p>Ahora levantamos la máquina virtual y comprobamos que podemos acceder a ella:</p>
-              <pre class="fragment">
+                </section>
+                <section>
+                    <h3>Vagrant</h3>
+                    <p>Ahora levantamos la máquina virtual y comprobamos que podemos acceder a ella:</p>
+                    <pre class="fragment">
                 <code data-trim contenteditable>
                   vagrant init precise64
 vagrant up
 vagrant ssh
               </code>
             </pre>
-            </section>
-            <section>
-              <h3>Vagrant</h3>
-              <img alt="image" src="images/vagrant.png" height="600"/>
-            </section>
-            <section>
-              <h3>Vagrant</h3>
-              <p>Se puede configurar mediante un Vagrantfile</i></p>
-              <pre class="fragment">
+                </section>
+                <section>
+                    <h3>Vagrant</h3>
+                    <img alt="image" src="images/vagrant.png" height="600" />
+                </section>
+                <section>
+                    <h3>Vagrant</h3>
+                    <p>Se puede configurar mediante un Vagrantfile</i>
+                    </p>
+                    <pre class="fragment">
                 <code data-trim contenteditable>
                   # -*- mode: ruby -*-
 # vi: set ft=ruby :
@@ -423,21 +490,21 @@ Vagrant.configure(2) do |config|
 end
               </code>
             </pre>
+                </section>
             </section>
-          </section>
-          <section>
-          <section>
-            <h3>Provisionar / desplegar en un IaaS</h3>
-            <p class="fragment">O como ya había dicho antes, en cualquier sitio</p>
-          </section>
-          <section>
-            <h3>Provisiona con Ansible</h3>
-            <p class="fragment"> Ansible es un motor de orquestación, una herramienta que nos permite aplicar configuraciones en infraestructuras remotas de forma automática. </p>
-          </section>
-          <section>
-  <h3>Provisiona con Ansible</h3>
-  <p> Inventario </p>
-  <pre>
+            <section>
+                <section>
+                    <h3>Provisionar / desplegar en un IaaS</h3>
+                    <p class="fragment">O como ya había dicho antes, en cualquier sitio</p>
+                </section>
+                <section>
+                    <h3>Provisiona con Ansible</h3>
+                    <p class="fragment"> Ansible es un motor de orquestación, una herramienta que nos permite aplicar configuraciones en infraestructuras remotas de forma automática. </p>
+                </section>
+                <section>
+                    <h3>Provisiona con Ansible</h3>
+                    <p> Inventario </p>
+                    <pre>
     <code data-trim contenteditable>
 perro.ejemplo.com ansible_ssh_host=192.168.1.34
 gato.ejemplo.com ansible_port=5555 ansible_host=192.168.1.43
@@ -457,11 +524,11 @@ ansible_ssh_user: "usuario"
 ansible_ssh_pass: "nolohagas" # NO RECOMENDABLE
     </code>
   </pre>
-</section>
-<section>
-  <h3>Provisiona con Ansible</h3>
-  <p> playbook.yml </p>
-           <pre>
+                </section>
+                <section>
+                    <h3>Provisiona con Ansible</h3>
+                    <p> playbook.yml </p>
+                    <pre>
              <code data-trim contenteditable>
 ---
 - hosts: transparente
@@ -498,20 +565,20 @@ ansible_ssh_pass: "nolohagas" # NO RECOMENDABLE
       command: chdir=ugr-transparente-servidor npm start
          </code>
        </pre>
-        </section>
-        <section>
-          <h3>Provisiona con Ansible</h3>
-          <p class="fragment"> Ejecutar: </p>
-          <pre class="fragment">
+                </section>
+                <section>
+                    <h3>Provisiona con Ansible</h3>
+                    <p class="fragment"> Ejecutar: </p>
+                    <pre class="fragment">
   <code data-trim contenteditable>
 ansible-playbook -become azure.yml
 </code>
 </pre>
-<img alt="image"  class="fragment" src="images/ansible.png"/>
-        </section>
-        <section>
-          <h3>Desplegar con Flightplan</h3>
-          <pre>
+                    <img alt="image" class="fragment" src="images/ansible.png" />
+                </section>
+                <section>
+                    <h3>Desplegar con Flightplan</h3>
+                    <pre>
   <code data-trim contenteditable>
 var plan = require('flightplan');
 
@@ -538,16 +605,16 @@ plan.remote(function(remote) {
 });
 </code>
 </pre>
-        </section>
-        <section>
-          <h3>Desplegar con Flightplan</h3>
-          <img alt="image" src="images/flightplan.png"/>
-        </section>
-      </section>
-      <section>
-        <h2>¿Preguntas?</h2>
-        <img alt="image"  class="fragment" src="images/conocimiento.png"/>
-      </section>
+                </section>
+                <section>
+                    <h3>Desplegar con Flightplan</h3>
+                    <img alt="image" src="images/flightplan.png" />
+                </section>
+            </section>
+            <section>
+                <h2>¿Preguntas?</h2>
+                <img alt="image" class="fragment" src="images/conocimiento.png" />
+            </section>
         </div>
     </div>
 
