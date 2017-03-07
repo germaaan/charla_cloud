@@ -77,7 +77,7 @@
                 </section>
                 <section>
                     <h4>La nube es independencia entre dispositivo y ubicación.</h4>
-                    <img alt="image" src="images/cloud_computing.png" height="450" />
+                    <img alt="image" src="images/cloud_computing.png" height="350" />
                     <font size=5>
                         <p>Poder manipular, configurar y acceder a aplicaciones sin tener que instalar nada en nuestro sistema local.</p>
                         <p>Poder hacer nuestras aplicaciones móviles y colaborativas.</p>
@@ -85,7 +85,7 @@
                 </section>
                 <section>
                     <h3>¿Por qué es necesario el cloud computing?</h3>
-                    <img alt="image" src="images/escalado.png" />
+                    <img alt="image" src="images/escalado.png"  height="350" />
                     <font size=5>
                         <p>Porque no siempre puedes tirar del "ordenador grande, ande o no ande".</p>
                         <p>Porque a veces no es viable y, además, necesitas respuesta inmediata.</p>
@@ -177,7 +177,7 @@
                 <section>
                     <h3>Nube privada</h3>
                     <font size=8>
-                        <p>Los servicios en la nube solo están disponible para una única organización, pudiendo ser gestionados internamente o por terceros.</p>
+                        <p>Los servicios en la nube solo están disponible para una única organización, pudiendo ser gestionados internamente o por terceros. Ej: OpenStack</p>
                     </font>
                     <font size=6>
                         <ul class="fragment">
@@ -275,13 +275,21 @@
                 </section>
                 <section>
                     <h3>Comparativa</h3>
-                    <img alt="image" src="images/comparativa.png"/>
+                    <img alt="image" src="images/comparativa.png" />
                 </section>
             </section>
             <section>
                 <section>
+                    <h3>Arquitecturas software para la nube</h3>
+                    <ul>
+                      <li>Arquitectura en capas</li>
+                      <li>Arquitectura dirigida por eventos</li>
+                      <li>Arquitectura microkernel</li>
+                      <li>Arquitectura basada en microservicios</li>
+                </section>
+                <section>
                     <h3>El bucle de la vida</h3>
-                    <img class="fragment" alt="image" src="images/ciclo.png" />
+                    <img alt="image" src="images/ciclo.png" />
                 </section>
                 <section>
                     <h3>Te hablo de: </h3>
@@ -308,156 +316,27 @@
             <section>
                 <section>
                     <h3>Pero antes de empezar a desarrollar...</h3>
-                    <h3>Hay un sitio dónde el software nace, crece, se reproduce y muere.</h3>
-                    <img class="fragment" alt="image" src="images/github.png" height="450" />
+                    <p>Hay un sitio dónde el software <u>nace, crece, se reproduce y muere.</u></p>
+                    <img class="fragment" alt="image" src="images/github.png" height="300" />
                 </section>
             </section>
             <section>
                 <section>
                     <h3>Empezamos:</h3>
                     <p>Antes de desplegar algo, tenemos que tener algo que desplegar. <i class="fragment">(Obvious is obvious...)</i></p>
-                    <p class="fragment">Node.js mola mucho, así que vamos asumir que es lo que estamos usando.</p>
-                </section>
-                <section>
-                    <h3>1: Instalación entornos virtuales desarrollo</h3>
-                    <p> Como por ejemplo: <a href="https://github.com/tj/n">n</a>.</p>
-                    <pre>
-              <code data-trim contenteditable>
-                $ npm install -g n
-              </code>
-            </pre>
-                </section>
-                <section>
-                    <h3>2: Construcción de aplicaciones</h3>
-                    <p>Como por ejemplo: <a href="https://github.com/gulpjs/gulp">gulp</a>.</p>
-                    <pre>
-              <code data-trim contenteditable>
-                $ npm install gulp
-              </code>
-            </pre>
-                </section>
-                <section>
-                    <h3>2: Construcción de aplicaciones</h3>
-                    <p>gulpfile.js:</p>
-                    <pre>
-              <code data-trim contenteditable>
-gulp.task('default', ["start"], function() {});
-
-gulp.task('start', ['test'], function() {
-	return pm2.connect(function(err) {
-		if (err) console.log(err);
-		pm2.start('app.js', function(err, app) {
-			if (err) console.log(err);
-			pm2.disconnect();
-		});
-	});
-});
-              </code>
-            </pre>
-                </section>
-                <section>
-                    <h3>2: Construcción de aplicaciones</h3>
-                    <pre>
-              <code data-trim contenteditable>
-                $ gulp
-              </code>
-            </pre>
-                    <img alt="image" src="images/gulp.png" />
-                </section>
-                <section>
-                    <h3>3: Realización de test</h3>
-                    <p> Test unitarios: </p>
-                    <ul>
-                        <li><a href="https://github.com/chaijs/chai">Chai</a></li>
-                        <li><a href="https://github.com/mochajs/mocha">Mocha</a></li>
-                    </ul>
-                    <p> Test de cobertura: </p>
-                    <ul>
-                        <li><a href="https://github.com/gotwarlost/istanbul">Istanbul</a></li>
-                    </ul>
-                    <pre>
-              <code data-trim contenteditable>
-                $ npm install chai mocha istanbul
-              </code>
-            </pre>
-                </section>
-                <section>
-                    <h3>3: Realización de test</h3>
-                    <p>test.js:</p>
-                    <pre>
-              <code data-trim contenteditable>
-describe('Pruebas de acceso', function() {
-
-  it("Acceso a páginas", function(done) {
-    async.eachSeries(config.direcciones, function(url, callback) {
-      request(app).get(url)
-        .expect(200)
-        .expect('Content-Type', "text/html; charset=utf-8")
-        .end(function(err, res) {
-          assert.notOk(err);
-          callback();
-        });
-      }, function() {
-        done();
-      });
-  });
-});
-              </code>
-            </pre>
-                </section>
-                <section>
-                    <h3>3: Realización de test</h3>
-                    <pre>
-              <code data-trim contenteditable>
-                $ gulp test
-              </code>
-            </pre>
-                    <img alt="image" src="images/test_1.png" />
-                    <img alt="image" src="images/test_2.png" />
-                </section>
-                <section>
-                    <h3>4: Integración continua</h3>
-                    <p>Como por ejemplo: <a href="https://travis-ci.org/">Travis CI</a>.</p>
-                    <pre>
-              <code data-trim contenteditable>
-# .travis.yml
-
-language: node_js
-
-node_js:
-  - 4.2.0
-
-before_install:
-  - "HAZ ESTO ANTES DE INSTALAR"
-
-after_success:
-  - "HAZ ESTO SI PASAS LOS TESTS"
-              </code>
-            </pre>
-                </section>
-                <section>
-                    <h3>4: Integración continua</h3>
-                    <img alt="image" src="images/travis.png" />
                 </section>
             </section>
             <section>
                 <section>
-                    <h3>¿Y ahora?</h3>
-                    <p class="fragment"><i>Desplegar<i class="fragment"> / </i><i class="fragment">Virtualizar</i></i>
-                    </p>
-                </section>
-            </section>
-            <section>
-                <section>
-                    <h3>Desplegar en un PaaS</h3>
-                    <p> Por ejemplo: <a href="https://www.heroku.com/">Heroku</a></p>
+                    <h3>Ejemplo: desplegar en un PaaS</h3>
+                    <p> Como <a href="https://www.heroku.com/">Heroku</a></p>
                     <p class="fragment"> Permiten añadir como complemento una base de datos PostgreSQL sobre la que podríamos trabajar directamente con nuestra aplicación.</p>
                     <p class="fragment"> Las máquinas virtuales disponibles en Heroku son conocidas como dynos y se configuran mediante un Procfile.</p>
                 </section>
                 <section>
                     <h3>Desplegar en un PaaS</h3>
                     <p> Configurando el Procfile</p>
-                    <p class="fragment"> Los dynos de Heroku se configuran mediante un archivo llamado Procfile y principalmente podemos diferenciar dos tipos de dynos: web para los procesos que van a recibir tráfico HTTP y worker para los procesos que se van a ejecutar en
+                    <p class="fragment"> Principalmente podemos diferenciar dos tipos de dynos: web para los procesos que van a recibir tráfico HTTP y worker para los procesos que se van a ejecutar en
                         segundo plano.</p>
                     <pre class="fragment">
                 <code data-trim contenteditable>
@@ -476,7 +355,7 @@ $ heroku apps:create --region eu NOMBRE_APP
 $ git push heroku master
                 </code>
               </pre>
-                    <img alt="image" class="fragment" src="images/heroku_01.png" height="300" />
+                    <img alt="image" class="fragment" src="images/heroku_01.png" height="250" />
                 </section>
                 <section>
                     <h3>Desplegar en un PaaS</h3>
@@ -532,12 +411,12 @@ CMD ["gulp", "server"]
                 </section>
                 <section>
                     <h3>Docker</h3>
-                    <img alt="image" src="images/docker.png" height="600" />
+                    <img alt="image" src="images/docker.png" height="500" />
                 </section>
                 <section>
                     <h3>Vagrant</h3>
-                    <p>Es una herramienta para la creación y configuración de entornos de desarrollo virtualizados.</p>
-                    <p>Lo primero es descargarse una caja <i class="fragment">(la caja!).</i></p>
+                    <p>Es una herramienta para la creación y configuración de entornos de desarrollo virtualizados de forma reproducible y portable.</p>
+                    <p class="fragment">Lo primero es descargarse una caja <i class="fragment">(la caja!).</i></p>
                     <pre class="fragment">
                 <code data-trim contenteditable>
                   vagrant box add precise64 http://files.vagrantup.com/precise64.box
@@ -546,10 +425,10 @@ CMD ["gulp", "server"]
                 </section>
                 <section>
                     <h3>Vagrant</h3>
-                    <p>Ahora levantamos la máquina virtual y comprobamos que podemos acceder a ella:</p>
+                    <p>Ahora simplemente la levantamos y nos conectamos a ella.</p>
                     <pre class="fragment">
                 <code data-trim contenteditable>
-                  vagrant init precise64
+vagrant init precise64
 vagrant up
 vagrant ssh
               </code>
@@ -557,7 +436,7 @@ vagrant ssh
                 </section>
                 <section>
                     <h3>Vagrant</h3>
-                    <img alt="image" src="images/vagrant.png" height="600" />
+                    <img alt="image" src="images/vagrant.png" height="550" />
                 </section>
                 <section>
                     <h3>Vagrant</h3>
@@ -583,11 +462,12 @@ end
             <section>
                 <section>
                     <h3>Provisionar / desplegar en un IaaS</h3>
-                    <p class="fragment">O como ya había dicho antes, en cualquier sitio</p>
+                    <p class="fragment">O en cualquier sitio</p>
                 </section>
                 <section>
-                    <h3>Provisiona con Ansible</h3>
+                    <h3>Ansible</h3>
                     <p class="fragment"> Ansible es un motor de orquestación, una herramienta que nos permite aplicar configuraciones en infraestructuras remotas de forma automática. </p>
+                    <p class="fragment"> Hay más: como Chef, Salt, Puppet </p>
                 </section>
                 <section>
                     <h3>Provisiona con Ansible</h3>
@@ -663,40 +543,6 @@ ansible-playbook -become azure.yml
 </code>
 </pre>
                     <img alt="image" class="fragment" src="images/ansible.png" />
-                </section>
-                <section>
-                    <h3>Desplegar con Flightplan</h3>
-                    <pre>
-  <code data-trim contenteditable>
-var plan = require('flightplan');
-
-plan.target('transparente', {
-	host: 'transparente.ugr.es',
-	username: process.env.USER,
-	agent: process.env.SSH_AUTH_SOCK
-});
-
-plan.remote(function(remote) {
-	remote.log('Creando copia de seguridad...');
-	remote.sudo('cp -Rf ugr-transparente-servidor ugr-transparente-servidor.bak', {
-		user: process.env.USER
-	});
-
-	remote.with('cd ugr-transparente-servidor', function() {
-		remote.log('Deteniendo el servidor...');
-		remote.exec('npm stop');
-		remote.log('Obteniendo cambios...');
-		remote.exec('git pull');
-		remote.log('Arrancando el servidor...');
-		remote.exec('npm start');
-	});
-});
-</code>
-</pre>
-                </section>
-                <section>
-                    <h3>Desplegar con Flightplan</h3>
-                    <img alt="image" src="images/flightplan.png" />
                 </section>
             </section>
             <section>
