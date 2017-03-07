@@ -29,6 +29,11 @@
             border: none;
             box-shadow: none;
         }
+
+        ul {
+            width: 70%;
+            margin: auto;
+        }
     </style>
 </head>
 
@@ -87,30 +92,6 @@
                     </font>
                 </section>
                 <section>
-                    <h3>Tecnologías del cloud computing</h3>
-                    <ul class="fragment">
-                        <li>Virtualización</li>
-                        <li class="fragment">Arquitectura orientada a servicios</li>
-                        <li class="fragment">Computación grid</li>
-                        <li class="fragment">Utility computing</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Infraestructura del cloud computing</h3>
-                    <ul class="fragment">
-                        <li>Hipervisor</li>
-                        <li class="fragment">Software de gestión</li>
-                        <li class="fragment">Software de despliegue</li>
-                        <li class="fragment">Red</li>
-                        <li class="fragment">Servidor</li>
-                        <li class="fragment">Almacenamiento</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Arquitecturas del cloud computing</h3>
-                    <img alt="image" src="images/frontback.png" height="450" />
-                </section>
-                <section>
                     <h3>Características principales</h3>
                     <ul class="fragment">
                         <li>Servicio bajo demanda</li>
@@ -132,6 +113,30 @@
                         <li class="fragment">Orientado a servicios</li>
                         <li class="fragment">Seguridad avanzada</li>
                     </ul>
+                </section>
+                <section>
+                    <h3>Tecnologías del cloud computing</h3>
+                    <ul class="fragment">
+                        <li>Virtualización</li>
+                        <li class="fragment">Arquitectura orientada a servicios</li>
+                        <li class="fragment">Computación grid</li>
+                        <li class="fragment">Utility computing</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Infraestructura del cloud computing</h3>
+                    <ul class="fragment">
+                        <li>Hipervisor</li>
+                        <li class="fragment">Software de gestión de la infraestructura</li>
+                        <li class="fragment">Software de despliegue de la aplicación</li>
+                        <li class="fragment">Red</li>
+                        <li class="fragment">Servidor</li>
+                        <li class="fragment">Almacenamiento</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Arquitecturas del cloud computing</h3>
+                    <img alt="image" src="images/frontback.png" height="450" />
                 </section>
                 <section>
                     <h3>Riesgos</h3>
@@ -156,11 +161,86 @@
                     <h3>Modelos de despliegue</h3>
                     <img alt="image" src="images/modelos_despliegue.png" height="450" />
                 </section>
+                <section>
+                    <h3>Nube pública</h3>
+                    <font size=8>
+                        <p>Un proveedor (Google, Amazon, Microsoft...) suministra servicios en la nube cuya infraestructura está disponible para el público en general.</p>
+                    </font>
+                    <font size=6>
+                        <ul class="fragment">
+                            <li>Económicas / Confiables / Independencia de ubicación / Pago por uso / Alta escabilidad</li>
+                            <br>
+                            <li class="fragment">Baja seguridad / Menos personalizable</li>
+                        </ul>
+                    </font>
+                </section>
+                <section>
+                    <h3>Nube privada</h3>
+                    <font size=8>
+                        <p>Los servicios en la nube solo están disponible para una única organización, pudiendo ser gestionados internamente o por terceros.</p>
+                    </font>
+                    <font size=6>
+                        <ul class="fragment">
+                            <li>Mayor seguridad y privacidad / Mayor control sobre los recursos</li>
+                            <br>
+                            <li class="fragment">Difícil despliegue global / Amplicación cara / Escalabilidad limitada / Mantenimiento</li>
+                        </ul>
+                    </font>
+                </section>
+                <section>
+                    <h3>Nube mixta</h3>
+                    <font size=8>
+                        <p>Combinación de nubes privadas y públicas independientes entre sí, pero que comparten información.</p>
+                    </font>
+                    <font size=6>
+                        <ul class="fragment">
+                            <li>Escalabilidad / Flexibilidad / Coste eficiente / Seguridad</li>
+                            <br>
+                            <li class="fragment">Problemas de red / Seguridad extrema</li>
+                        </ul>
+                    </font>
+                </section>
+                <section>
+                    <h3>Nube comunitaria</h3>
+                    <font size=8>
+                        <p>La infraestructura de una misma nube es compartida por varias organizaciones de una comunidad específica.</p>
+                    </font>
+                    <font size=6>
+                        <ul class="fragment">
+                            <li>Coste efectivo / Seguridad</li>
+                            <br>
+                            <li class="fragment">Datos accesibles</li>
+                        </ul>
+                    </font>
+                </section>
             </section>
             <section>
                 <section>
                     <h3>Modelos de servicio</h3>
                     <img class="fragment" alt="image" src="images/not_simply_deploy.png" />
+                </section>
+                <section>
+                    <h3>IaaS</h3>
+                    <p>
+                        <strong>Infrastructure as a Service</strong>: un distribuidor provee una infraestructura virtualizada con las caracteristicas solicitadas. Incluyendo:
+                        <ul class="fragment">
+                            <li>Almacenamiento en disco de la máquina virtual</li>
+                            <li>Red de área local virtual</li>
+                            <li>Balanceadores de carga</li>
+                            <li>Direcciones IP</li>
+                            <li>Paquetes de software</li>
+                        </ul>
+                        <br>
+                        <strong class="fragment">Ejemplos: Microsoft Azure, Amazon EC2, Google Cloud Platform </strong>
+                    </p>
+                </section>
+                <section>
+                    <h3>IaaS</h3>
+                    <img alt="image" src="images/iass.png" />
+                </section>
+                <section>
+                    <h3>IaaS</h3>
+                    <img alt="image" src="images/iass.png" />
                 </section>
                 <section>
                     <h3>Modelos de servicio: SaaS</h3>
@@ -191,22 +271,6 @@
                         </ul>
                         <br>
                         <strong class="fragment">Ejemplo:<br> Heroku, OpenShift, Google App Engine, Bluemix</strong>
-                    </p>
-                </section>
-                <section>
-                    <h3>Modelos de servicio: IaaS</h3>
-                    <p>
-                        <strong>Infrastructure as a Service: un distribuidor provee una infraestructura virtualizada con las caracteristicas solicitadas.</strong>
-                        <ul>
-                            <li class="fragment">Escalabilidad</li>
-                            <li class="fragment">Sin inversión en hardware físico "limitado"</li>
-                            <li class="fragment">Pago por uso</li>
-                            <li class="fragment">Independencia de ubicación</li>
-                            <li class="fragment">Seguridad física de centros de datos</li>
-                            <li class="fragment">Sin punto de fallo único</li>
-                        </ul>
-                        <br>
-                        <strong class="fragment">Ejemplos: Microsoft Azure, Amazon EC2, Google Cloud Platform </strong>
                     </p>
                 </section>
                 <section>
